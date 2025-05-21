@@ -1,0 +1,8 @@
+.navbar-text {
+  color: grey;
+  cursor: pointer;
+}
+.navbar-text:hover {
+  color: white;
+  outline: none;
+}
