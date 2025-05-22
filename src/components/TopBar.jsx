@@ -1,31 +1,32 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./TopBar.css";
 import { BsSearch, BsBell, BsPerson, BsPersonCircle } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const TopBar = () => (
   <Navbar expand="lg" className="topbar">
-    <Container fluid>
+    <Container fluid className="">
       <Navbar.Brand href="#">
         <img src="./public/logo.png" alt="Logo" style={{ width: "100px", height: "50px" }} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#" className="navbar-text">
+          <Link to="/" className="navbar-link">
             Home
-          </Nav.Link>
-          <Nav.Link href="#" className="navbar-text">
+          </Link>
+          <Link to="/tv-show" className="navbar-link">
             TV Shows
-          </Nav.Link>
-          <Nav.Link href="#" className="navbar-text">
+          </Link>
+          <Link to="/" className="navbar-link">
             Movies
-          </Nav.Link>
-          <Nav.Link href="#" className="navbar-text">
+          </Link>
+          <Link to="/" className="navbar-link">
             Recently Added
-          </Nav.Link>
-          <Nav.Link href="#" className="navbar-text">
+          </Link>
+          <Link to="/" className="navbar-link">
             My List
-          </Nav.Link>
+          </Link>
         </Nav>
         <div className="topbar-icons d-flex align-items-center gap-3">
           <BsSearch color="white" />

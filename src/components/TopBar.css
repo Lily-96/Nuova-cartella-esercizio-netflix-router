@@ -1,8 +1,10 @@
-.navbar-text {
+.navbar-link {
   color: grey;
   cursor: pointer;
+  padding-inline: 5px;
+  text-decoration: none;
 }
-.navbar-text:hover {
+.navbar-link:hover {
   color: white;
   outline: none;
 }
